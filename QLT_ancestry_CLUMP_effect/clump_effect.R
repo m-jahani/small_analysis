@@ -10,7 +10,7 @@ args = commandArgs(trailingOnly = TRUE)
 GWA_result1 <- args[1] #a file with two columns,first column: sample name, second column: popname. No header
 GWA_result2 <- args[2] #index file in the same directory
 clump_result <- args[3] #directory to save the analysis. ends with /
-SAVE_DIR <-  args[4] #directory to vcf2baypass.pl
+SAVE_DIR <-  args[4] #save directory
 
 
 fread(GWA_result1) %>% 
